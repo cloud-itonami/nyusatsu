@@ -1,13 +1,14 @@
 # Migration TODO
 
-**Status**: 🔄 TRANSFORM — seed copied 2026-05-21, codemod pending.
+**Status**: standalone repository migration complete; substrate codemod pending.
 
 **Codemod required**: commerce — Stripe→USDC+TitheRouter, SBT carve-out
 
 ## Substrate-boundary checks
 
-This actor SDK was copied verbatim from `etzhayyim-root/20-actors/nyusatsu`.
-Following must be remediated:
+The former root actor content now lives in this standalone repository with EDN
+as its canonical format and external JSON-LD isolated under `wire/`. The
+following substrate changes remain future work:
 
 - [ ] Replace direct `@atproto/api` / `viem` / IPFS / Signal client imports with `@etzhayyim/sdk`.
 - [ ] Strip RisingWave / Postgres / Kysely → AT MST + IPFS + Base L2 anchor.

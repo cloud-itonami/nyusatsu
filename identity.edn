@@ -1,0 +1,5 @@
+{:repository/id "com-etzhayyim-nyusatsu"
+ :repository/type :actor
+ :actor/id :nyusatsu
+ :actor/did "did:web:etzhayyim.com:nyusatsu"
+ :canonical-format :edn}

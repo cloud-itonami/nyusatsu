@@ -1,0 +1,7 @@
+{:migration/version 1
+ :migration/status :standalone
+ :from "20-actors/nyusatsu"
+ :to "orgs/etzhayyim/com-etzhayyim-nyusatsu"
+ :source-revision "10fc3c85daed39fdff7fd6ced603283121a16900"
+ :canonical-format :edn
+ :wire-root "wire"}
