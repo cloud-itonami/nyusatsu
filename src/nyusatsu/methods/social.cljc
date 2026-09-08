@@ -10,7 +10,7 @@
 
   Multilingual: the summary line is rendered in the bid's source language AND English
   (langs = [source-lang \"en\"]). Stdlib only. Deterministic."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def MIRROR_PREFIX
   "[mirror · not a verdict] nyusatsu reports, attributed, the procurement notices public

@@ -1,7 +1,7 @@
 (ns nyusatsu.methods.test-social
   "test_social.cljc — dry-run, member-signed, multilingual, non-adjudicating posts. ADR-2606271700."
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [nyusatsu.methods.social :as social]))
 
 (def bid

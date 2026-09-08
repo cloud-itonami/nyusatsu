@@ -17,7 +17,7 @@
 
   Pure (the gates are throwing assertions); no I/O. House style: ':…' keyword strings stay
   literal strings (root CLAUDE.md convention)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── closed enums (OCDS-aligned) ──────────────────────────────────────────────
 (def methods    #{":open" ":selective" ":limited" ":direct"})
@@ -49,7 +49,7 @@
 (defn- num? [x] (and (number? x) (not (Double/isNaN (double x)))))
 
 (defn- host-of [url]
-  (some-> url (str/replace #"^https?://" "") (str/split #"/") first str/lower-case))
+  (some-> url (str/replace #"^https?://" "") (str/split #"/") first str/lower))
 
 (defn- paid-aggregator? [url]
   (let [h (host-of url)]

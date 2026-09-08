@@ -6,7 +6,7 @@
   keywords — the seed (`data/seed-procurement-graph.kotoba.edn`) keys every record on
   string keys (\":bid/ocid\", \":bid/status\", …) per the root CLAUDE.md convention, so
   the loader must yield the same string shape the Python `load_edn` does. Stdlib only."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def ^:private token-re
   #"[\s,]+|;[^\n]*|(\[|\]|\{|\}|\"(?:\\.|[^\"\\])*\"|[^\s,\[\]{}]+)")
