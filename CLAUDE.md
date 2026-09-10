@@ -10,7 +10,7 @@
 
 ```bash
 # from the etzhayyim root (20-actors on the classpath):
-bb --classpath 20-actors run_tests.clj      # 24 tests / 67 assertions green
+bb --classpath 20-actors run_tests.kotoba      # 24 tests / 67 assertions green
 # offline OCDS ingest (fast path, no LLM); --live is REFUSED (G8):
 bb --classpath 20-actors -e "(require 'nyusatsu.methods.ingest) \
   (apply nyusatsu.methods.ingest/-main [\"<ocds-release-package.json>\" \"GB\" \"<issuer-did>\" \"<source-url>\"])"
