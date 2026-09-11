@@ -1,8 +1,8 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; run_tests.clj — 入札 (nyusatsu) clj/bb test suite (ADR-2606271700; repo rule: .clj not .sh).
 ;;
 ;; Run from the standalone repository root:
-;;   bb --classpath src:test run_tests.clj
+;;   kbb --classpath src:test run_tests.clj
 ;;
 ;; (The seed path in test_charter_invariants.cljc is resolved relative to the root cwd.)
 (require '[clojure.test :as t]
