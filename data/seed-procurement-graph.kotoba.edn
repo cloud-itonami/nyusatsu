@@ -11,7 +11,7 @@
 ;;   mx-* : services tender, selective method
 ;;   jp-* : active goods tender (the legacy JP adapter, jurisdiction "JP-13" Tokyo)
 ;;
-;; Keywords are kept as ":ns/name" STRINGS (root CLAUDE.md convention; read by nyusatsu.methods.edn).
+;; Keywords are kept as ":ns/name" STRINGS (root AGENTS.md convention; read by nyusatsu.methods.edn).
 
 {:graph {:name "nyusatsu-procurement-v1" :visibility :public}
 

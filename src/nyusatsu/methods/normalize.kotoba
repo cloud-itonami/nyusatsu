@@ -16,7 +16,7 @@
     G10 sourcing-honesty     — sourcing ∈ {:representative :authoritative}
 
   Pure (the gates are throwing assertions); no I/O. House style: ':…' keyword strings stay
-  literal strings (root CLAUDE.md convention)."
+  literal strings (root AGENTS.md convention)."
   (:require [kotoba.lang.text :as str]))
 
 ;; ── closed enums (OCDS-aligned) ──────────────────────────────────────────────
